@@ -1,0 +1,83 @@
+a {
+    color: #2360ad;
+}
+
+body p, ul li {
+    font-size: 1.2em;
+}
+
+body p, ul li, h1, h2, h3, h4 {
+    font-family: "Times New Roman",Times,serif;
+    color: #000000;
+}
+
+.site-header, .site-content, footer {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 8px;
+}
+
+.site-header a {
+    color: #000000;
+}
+
+.site-header {
+    text-align: center;
+}
+
+.site-header p {
+    font-size: 12px;
+    margin: 1px;
+}
+
+.posts {
+    margin-top: 30px;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 22px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.posts li {
+    margin-top: 0.8em;
+}
+
+.posts li a {
+    color: #000000;
+}
+
+code {
+    background-color: #efefef;
+    padding: 2px;
+}
+
+.article-head {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.article-head h1 {
+    font-size: 30px;
+}
+
+.article-head p {
+    font-size: 15px;
+}
+
+.article-content {
+    word-break: break-word;
+}
+
+footer {
+    margin-top: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #eeeeee;
+    text-align: center;
+}
+
+footer p {
+    margin: 1px;
+    margin-bottom: 1px;
+}
