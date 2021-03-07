@@ -4,6 +4,20 @@ import { Helmet } from "react-helmet"
 import { useLocation } from "@reach/router"
 import { useStaticQuery, graphql } from "gatsby"
 
+const query = graphql`
+  query SEO {
+    site {
+      siteMetadata {
+        defaultTitle: title
+        titleTemplate
+        defaultDescription: description
+        siteUrl: url
+        defaultImage: image
+      }
+    }
+  }
+`
+
 const SEO = ({ title, description, image, article }) => {
   const { pathname } = useLocation()
   const { site } = useStaticQuery(query)
@@ -29,21 +43,20 @@ const SEO = ({ title, description, image, article }) => {
       <meta name="image" content={seo.image} />
 
       {seo.url && <meta property="og:url" content={seo.url} />}
-
+      {seo.title && <meta property="og:title" content={seo.title} />}
+      {seo.description && <meta property="og:description" content={seo.description} />}
+      {seo.image && <meta property="og:image" content={seo.image} />}
       {(article ? true : null) && <meta property="og:type" content="article" />}
 
-      {seo.title && <meta property="og:title" content={seo.title} />}
+      <meta content='summary' name='twitter:card' />
+      <meta name="twitter:title" content={seo.title} />
+      <meta name="twitter:description" content={seo.description} />
+      <meta name="twitter:creator" content="@gustv0_" />
 
-      {seo.description && (
-      <meta property="og:description" content={seo.description} />
-      )}
-
-      {seo.image && <meta property="og:image" content={seo.image} />}
+      <meta name="twitter:image:src" content={seo.image} />
     </Helmet>
   )
 }
-
-export default SEO
 
 SEO.propTypes = {
   title: PropTypes.string,
@@ -59,16 +72,4 @@ SEO.defaultProps = {
   article: false,
 }
 
-const query = graphql`
-  query SEO {
-    site {
-      siteMetadata {
-        defaultTitle: title
-        titleTemplate
-        defaultDescription: description
-        siteUrl: url
-        defaultImage: image
-      }
-    }
-  }
-`
+export default SEO

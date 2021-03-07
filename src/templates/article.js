@@ -9,7 +9,7 @@ export default function Template({
   const { frontmatter, html } = markdownRemark
 
   return (
-    <Layout title={frontmatter.title} key="Out">
+    <Layout title={frontmatter.title} key="Out" article={true}>
       <header className="article-head">
         <h1>{frontmatter.title}</h1>
         <p>{frontmatter.date}</p>
