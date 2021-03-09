@@ -21,8 +21,13 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-react-helmet`,
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -30,6 +35,9 @@ module.exports = {
         path: `${__dirname}/src/pages/articles`,
       },
     },
+    `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -37,8 +45,11 @@ module.exports = {
           {
             resolve: `gatsby-remark-prismjs`
           },
+          {
+            resolve: `gatsby-remark-images`
+          },
         ],
       },
-    }
+    },
   ],
 }
