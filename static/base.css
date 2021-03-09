@@ -81,3 +81,7 @@ footer p {
     margin: 1px;
     margin-bottom: 1px;
 }
+
+footer .links {
+    margin: 1em 0;
+}
