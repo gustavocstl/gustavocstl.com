@@ -85,3 +85,7 @@ footer p {
 footer .links {
     margin: 1em 0;
 }
+
+.gatsby-resp-image-background-image {
+    background-image: none !important;
+}
