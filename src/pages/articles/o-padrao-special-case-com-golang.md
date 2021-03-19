@@ -2,6 +2,7 @@
 slug: "/o-padrao-special-case-com-golang"
 date: "2021-03-05"
 title: "O padrão Special Case com Golang"
+description: "Implementando o padrão Special Case com Golang..."
 ---
 
 Imagine uma aplicação que precisa realizar cobranças recorrentes de assinaturas e durante o planejamento dessa aplicação nos damos conta de que precisamos lidar com alguns casos específicos no momento de realizar a cobrança com os dados do usuário.

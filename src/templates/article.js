@@ -9,7 +9,7 @@ export default function Template({
   const { frontmatter, html } = markdownRemark
 
   return (
-    <Layout title={frontmatter.title} key="Out" article={true}>
+    <Layout title={frontmatter.title} key="Out" article={true} description={frontmatter.description}>
       <header className="article-head">
         <h1>{frontmatter.title}</h1>
         <p>{frontmatter.date}</p>
@@ -28,6 +28,7 @@ export const pageQuery = graphql`
         date(formatString: "DD/MM/YYYY")
         slug
         title
+        description
       }
     }
   }

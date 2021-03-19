@@ -2,6 +2,7 @@
 slug: "/golang-slices-arrays-e-a-memoria"
 date: "2021-03-19"
 title: "Golang - Slices, arrays e a memória"
+description: "Um slice possui em sua estrutura um ponteiro para um índice de um array..."
 ---
 
 Um slice possui em sua estrutura um ponteiro para um índice de um array.

@@ -2,6 +2,7 @@
 slug: "/python-async-context-manager"
 date: "2021-03-10"
 title: "Python - Async Context Manager"
+description: "O context manager do Python é bastante útil quando precisamos gerenciar recursos..."
 ---
 
 O context manager do Python é bastante útil quando precisamos gerenciar recursos, é o gerenciador que irá fazer a inicialização e a finalização desses recursos.
