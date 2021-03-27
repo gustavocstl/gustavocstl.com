@@ -70,7 +70,7 @@ async with Connection() as conn:
 
 Assim que todas as operações finalizarem ou caso ocorra alguma exceção, o método `__aexit__` será chamado e a conexão será fechada. Isso nos ajuda pois não precisamos chamar o método para fechar a conexão em cada uso ou então lidar com o rollback caso exceções aconteçam e de certa forma fica muito mais claro o que está acontecendo no código.
 
-## Referências
+## Links Úteis
 
 - [Asynchronous Context Managers](https://docs.python.org/3/reference/datamodel.html#async-context-managers)
 - [Python AbstractAsyncContextManager Documentation](https://docs.python.org/3/library/contextlib.html#contextlib.AbstractAsyncContextManager)

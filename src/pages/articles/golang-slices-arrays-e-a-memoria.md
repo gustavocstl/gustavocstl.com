@@ -71,7 +71,7 @@ lenX: 3, capX: 3
 lenY: 2, capY: 2
 ```
 
-## Referências
+## Links Úteis
 
 - [Effective Go - Slices](https://golang.org/doc/effective_go#slices)
 - [Go Slices: usage and internals](https://blog.golang.org/slices-intro)
