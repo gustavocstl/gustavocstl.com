@@ -122,16 +122,22 @@ Nesse caso será o **B** e ele irá fazer os mesmos cálculos mostrados acima.
 ---
 
 Agora para **D**:
+
 ![Diagrama do terceiro passo do algoritmo de Dijkstra](../../images/dijkstra-diagram-third-step.png)
 
 ---
 
-Por fim para **C**:
-![Diagrama do quarto passo do algoritmo de Dijkstra](../../images/dijkstra-diagram-fourth-step.png)
+O vértice **E** é o próximo, mas não possui nenhuma aresta, então o algoritmo irá apenas marcar como visitado.
 
 ---
 
-O vértice **E** não possui nenhuma aresta, então o algoritmo irá apenas marcar como vistado.
+Por último o algoritmo passa por **C**.
+
+Note que **C** tem caminho para ir até **E**, porém ele não atualiza o custo pois é maior do que o custo atual em **E**:
+
+![Diagrama do quarto passo do algoritmo de Dijkstra](../../images/dijkstra-diagram-fourth-step.png)
+
+---
 
 O resultado final é:
 ```py
