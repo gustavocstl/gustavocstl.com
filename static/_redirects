@@ -1,0 +1,4 @@
+http://gustv0.com/* https://gustv0.dev/:splat 301!
+https://gustv0.com/* https://gustv0.dev/:splat 301!
+
+http://gustv0.dev/* https://gustv0.dev/:splat 301!
