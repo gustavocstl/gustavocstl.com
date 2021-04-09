@@ -1,4 +1,8 @@
+# Domain redirects
 http://gustv0.com/* https://gustv0.dev/:splat 301!
 https://gustv0.com/* https://gustv0.dev/:splat 301!
 
 http://gustv0.dev/* https://gustv0.dev/:splat 301!
+
+# Article renames
+/algoritmos-gananciosos /algoritmos-gulosos 301

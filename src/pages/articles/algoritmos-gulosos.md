@@ -1,11 +1,11 @@
 ---
-slug: "/algoritmos-gananciosos"
+slug: "/algoritmos-gulosos"
 date: "2021-03-27"
-title: "Algoritmos Gananciosos"
+title: "Algoritmos Gulosos"
 description: "Esse algoritmo, em cada iteração, irá fazer a escolha que parece ser a melhor no momento..."
 ---
 
-Um algoritmo ganancioso pode ser utilizado para resolver problemas que não possuem um algoritmo que resolveria de forma rápida.
+Um algoritmo guloso pode ser utilizado para resolver problemas que não possuem um algoritmo que resolveria de forma rápida.
 
 Esse algoritmo, em cada iteração, irá fazer a escolha que parece ser a melhor no momento para chegar na melhor solução final que ele consegue.
 
@@ -15,7 +15,7 @@ Um exemplo básico, você possui um tempo limite para completar uma série de ta
 
 ![Diagram das tarefas](../../images/tasks-diagram.png)
 
-Esse é um problema que um algoritmo ganancioso pode resolver. Você precisa escolher o máximo de tarefas que consegue completar dentro desse limite.
+Esse é um problema que um algoritmo guloso pode resolver. Você precisa escolher o máximo de tarefas que consegue completar dentro desse limite.
 
 ```py
 tasks = [1, 3, 6, 7, 10]
@@ -40,11 +40,11 @@ E a resposta final desse algoritmo é **3** tarefas.
 
 ## Algoritmo de Dijkstra
 
-O algoritmo de [Dijkstra](https://pt.wikipedia.org/wiki/Edsger_Dijkstra) também é um ótimo exemplo de um algoritmo ganancioso, ele é usado para calcular o caminho mínimo entre um vértice inicial e todos os outros vértices em um [grafo com pesos](https://pt.wikipedia.org/wiki/Grafo_valorado) não negativos.
+O algoritmo de [Dijkstra](https://pt.wikipedia.org/wiki/Edsger_Dijkstra) também é um ótimo exemplo de um algoritmo guloso, ele é usado para calcular o caminho mínimo entre um vértice inicial e todos os outros vértices em um [grafo com pesos](https://pt.wikipedia.org/wiki/Grafo_valorado) não negativos.
 
 ![Diagrama de um grafo ponderado](../../images/dijkstra-diagram.png)
 
-Esse algoritmo é considerado ganancioso pois a cada iteração ele irá tentar fazer o movimento que tem o menor peso de acordo com as possibilidades atuais e o algoritmo nunca voltará atrás de uma decisão que ele tenha feito.
+Esse algoritmo é considerado guloso pois a cada iteração ele irá tentar fazer o movimento que tem o menor peso de acordo com as possibilidades atuais e o algoritmo nunca voltará atrás de uma decisão que ele tenha feito.
 
 ## Implementação
 
