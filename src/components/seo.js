@@ -37,8 +37,6 @@ const SEO = ({ title, description, image, article }) => {
     url: `${siteUrl}${pathname}`,
   }
 
-  console.log(seo.description)
-
   return (
     <Helmet title={seo.title} titleTemplate={titleTemplate}>
       <meta name="description" content={seo.description} />
