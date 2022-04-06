@@ -11,6 +11,13 @@ body p, ul li, h1, h2, h3, h4 {
     color: #000000;
 }
 
+blockquote {
+  background: #fafafa;
+  padding: 10px;
+  border-top: 1px solid #cccccc38;
+  border-bottom: 1px solid #cccccc38;
+}
+
 .site-header, .site-content, footer {
     max-width: 700px;
     margin: 0 auto;

@@ -8,7 +8,6 @@ const Index = ({data}) => {
   return (
     <Layout title="GUSTV0 - Artigos" key="Out">
       <div>
-        <p>Alguns estudos pessoais sobre desenvolvimento de software. Também faço parte de um podcast, <a href="https://twitter.com/quebradev" target="_blank" rel="noreferrer">@quebradev</a></p>
         <ul className="posts">
           {allMarkdownRemark.edges.map((edge, index) => 
             <li>

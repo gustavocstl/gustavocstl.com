@@ -8,7 +8,7 @@ module.exports = {
   siteMetadata: {
     title: "GUSTV0",
     titleTemplate: "%s",
-    description: "Alguns estudos sobre desenvolvimento de software.",
+    description: "",
     url: "http://gustv0.com",
     image: "/",
   },
