@@ -143,4 +143,4 @@ func (p PaymentReceiver) Charge(subscription model.Subscription) error {
 Separamos nossas lógicas de cobrança em vários casos especiais e cada caso tem o seu próprio comportamento. Essa é a ideia do Special Case e vale também mencionar que ele está muito relacionado com o padrão [Null Object](https://pt.stackoverflow.com/questions/88741/pra-que-serve-o-padr%C3%A3o-null-object) que de forma básica faz coisas parecidas para evitar o retorno do valor `null` no código.
 Também podemos ver que os padrões de projetos muitas vezes irão ser usados em conjunto.
 
-Caso queira ver o código utilizado aqui: [https://github.com/gucastiliao/special-case-pattern](https://github.com/gucastiliao/special-case-pattern)
+Caso queira ver o código utilizado aqui: [https://github.com/gustv000/special-case-pattern](https://github.com/gustv000/special-case-pattern)
