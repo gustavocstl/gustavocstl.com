@@ -6,19 +6,17 @@
 
 module.exports = {
   siteMetadata: {
-    title: "GUSTV0",
+    title: "Gustavo Castilião",
     titleTemplate: "%s",
     description: "",
-    url: "http://gustv0.com",
+    url: "https://gustavocstl.com",
     image: "/",
   },
   plugins: [
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingIds: [
-          "G-G07TXX8YJ9",
-        ],
+        trackingIds: ["G-G07TXX8YJ9"],
       },
     },
     {
@@ -43,10 +41,10 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-prismjs`
+            resolve: `gatsby-remark-prismjs`,
           },
           {
-            resolve: `gatsby-remark-images`
+            resolve: `gatsby-remark-images`,
           },
         ],
       },

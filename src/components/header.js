@@ -10,7 +10,7 @@ class Header extends React.Component {
       <header className="site-header">
         <Link to="/">
           <img src={KafkaIcon} title="Franz Kafka, A Metamorfose" alt="Franz Kafka, A Metamorfose"/>
-          <p>Artigos</p>
+          <p>Posts</p>
         </Link>
       </header>
     ]

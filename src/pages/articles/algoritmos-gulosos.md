@@ -48,7 +48,7 @@ Esse algoritmo é considerado guloso pois a cada iteração ele irá tentar faze
 
 ## Implementação
 
-Vou utilizar apenas algumas partes do código para explicar, mas o código completo você pode ver aqui: [dijkstra.py](https://gist.github.com/gustv000/5a819d521a66fa665ba3ce63aa647b6d)
+Vou utilizar apenas algumas partes do código para explicar, mas o código completo você pode ver aqui: [dijkstra.py](https://gist.github.com/gustavocstl/5a819d521a66fa665ba3ce63aa647b6d)
 
 Para inicializar, precisamos definir os vértices e os pesos das arestas do nosso grafo. 
 
@@ -146,7 +146,7 @@ a -> b -> d -> e
 
 E esse é o melhor caminho para **E** iniciando em **A**. Com o custo total de **5**.
 
-O código completo você pode ver aqui: [dijkstra.py](https://gist.github.com/gustv000/5a819d521a66fa665ba3ce63aa647b6d)
+O código completo você pode ver aqui: [dijkstra.py](https://gist.github.com/gustavocstl/5a819d521a66fa665ba3ce63aa647b6d)
 
 ## Algoritmo de Bellman-Ford
 

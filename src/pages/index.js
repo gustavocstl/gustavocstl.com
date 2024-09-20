@@ -6,7 +6,7 @@ const Index = ({data}) => {
   const { allMarkdownRemark } = data
 
   return (
-    <Layout title="GUSTV0 - Artigos" key="Out">
+    <Layout title="Gustavo Castilião" key="Out">
       <div>
         <ul className="posts">
           {allMarkdownRemark.edges.map((edge, index) => 

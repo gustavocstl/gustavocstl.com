@@ -7,16 +7,7 @@ class Footer extends React.Component {
         <section className="links">
           <p>
             <a
-              href="https://twitter.com/gustv0_"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Twitter
-            </a>
-          </p>
-          <p>
-            <a
-              href="https://www.linkedin.com/in/gucastiliao"
+              href="https://www.linkedin.com/in/gustavocastiliao"
               target="_blank"
               rel="noreferrer"
             >
@@ -25,7 +16,7 @@ class Footer extends React.Component {
           </p>
           <p>
             <a
-              href="https://github.com/gustv000"
+              href="https://github.com/gustavocstl"
               target="_blank"
               rel="noreferrer"
             >
@@ -33,11 +24,7 @@ class Footer extends React.Component {
             </a>
           </p>
           <p>
-            <a
-              href="https://twitter.com/quebradev"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="https://quebra.dev/" target="_blank" rel="noreferrer">
               QuebraDev
             </a>
           </p>

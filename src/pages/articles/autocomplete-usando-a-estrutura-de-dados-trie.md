@@ -128,7 +128,7 @@ Agora como exemplo, você pode utilizar essa demo para adicionar palavras e digi
 Caso não consiga visualizar o exemplo, acesse o link externo: [https://autocomplete-com-trie.netlify.app/](https://autocomplete-com-trie.netlify.app/)
 
 Para ver a implementação do auto-complete com trie, esse é o código fonte:
-[https://github.com/gustv000/autocomplete-trie-live-example](https://github.com/gustv000/autocomplete-trie-live-example)
+[https://github.com/gustavocstl/autocomplete-trie-live-example](https://github.com/gustavocstl/autocomplete-trie-live-example)
 
 ## Links Úteis
 - [Tries (árvores digitais)](https://www.ime.usp.br/~pf/estruturas-de-dados/aulas/tries.html)
