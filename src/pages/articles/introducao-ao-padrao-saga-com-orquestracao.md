@@ -7,7 +7,7 @@ description: "O padrão saga é utilizado para lidar com transações distribuí
 
 O padrão saga é utilizado para lidar com transações distribuídas entre microserviços. Em uma arquitetura de microserviços, uma única requisição pode ser dividida entre vários microserviços com o objetivo final de concluir aquela requisição com sucesso, porém em qualquer parte desse fluxo podem ocorrer falhas e esses microserviços precisam saber como lidar com essas falhas.
 
-Neste artigo vamos falar sobre o padrão saga **com orquestração**. A orquestração também ajuda a resolver o problema de comunicação entre vários domínios de negócio, uma vez que nenhum domínio deveria falar diretamente com outro domínio ou até mesmo nenhum domínio precisaria conhecer outro domínio. 
+Neste post vamos falar sobre o padrão saga **com orquestração**. A orquestração também ajuda a resolver o problema de comunicação entre vários domínios de negócio, uma vez que nenhum domínio deveria falar diretamente com outro domínio ou até mesmo nenhum domínio precisaria conhecer outro domínio. 
 
 Imagine um sistema de ecommerce onde cada compra tem um ciclo de vida que envolve desde a **criação do pedido** até o **envio** e durante esse fluxo múltiplos serviços de diferentes domínios podem ser envolvidos:
 
