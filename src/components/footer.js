@@ -11,7 +11,7 @@ class Footer extends React.Component {
               target="_blank"
               rel="noreferrer"
             >
-              Linkedin
+              LinkedIn
             </a>
           </p>
           <p>
@@ -21,16 +21,6 @@ class Footer extends React.Component {
               rel="noreferrer"
             >
               GitHub
-            </a>
-          </p>
-          <p>
-            <a href="https://quebra.dev/" target="_blank" rel="noreferrer">
-              QuebraDev
-            </a>
-          </p>
-          <p>
-            <a href="https://unixepoch.dev" target="_blank" rel="noreferrer">
-              unixepoch.dev
             </a>
           </p>
         </section>
