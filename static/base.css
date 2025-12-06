@@ -30,6 +30,7 @@ blockquote {
 
 .site-header {
     text-align: center;
+    padding: 16px 8px 8px 8px;
 }
 
 .site-header p {
@@ -38,12 +39,16 @@ blockquote {
 }
 
 .posts {
-    margin-top: 30px;
+    margin-top: 0;
     margin-bottom: 0;
     text-align: center;
     font-size: 22px;
     list-style-type: none;
     padding: 0;
+}
+
+.posts li:first-child {
+  margin-top: 0;
 }
 
 .posts li {
@@ -61,11 +66,11 @@ code {
 
 .article-head {
     text-align: center;
-    margin-bottom: 40px;
 }
 
 .article-head h1 {
     font-size: 30px;
+    margin-top: 0;
 }
 
 .article-head p {
