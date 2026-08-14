@@ -13,7 +13,7 @@ Esse algoritmo, em cada iteração, irá fazer a escolha que parece ser a melhor
 
 Um exemplo básico, você possui um tempo limite para completar uma série de tarefas e cada tarefa possui um tempo para ser completada.
 
-![Diagram das tarefas](../../images/tasks-diagram.png)
+![Diagram das tarefas](/images/tasks-diagram.png)
 
 Esse é um problema que um algoritmo guloso pode resolver. Você precisa escolher o máximo de tarefas que consegue completar dentro desse limite.
 
@@ -42,7 +42,7 @@ E a resposta final desse algoritmo é **3** tarefas.
 
 O algoritmo de [Dijkstra](https://pt.wikipedia.org/wiki/Edsger_Dijkstra) também é um ótimo exemplo de um algoritmo guloso, ele é usado para calcular o caminho mínimo entre um vértice inicial e todos os outros vértices em um [grafo com pesos](https://pt.wikipedia.org/wiki/Grafo_valorado) não negativos.
 
-![Diagrama de um grafo ponderado](../../images/dijkstra-diagram.png)
+![Diagrama de um grafo ponderado](/images/dijkstra-diagram.png)
 
 Esse algoritmo é considerado guloso pois a cada iteração ele irá tentar fazer o movimento que tem o menor peso de acordo com as possibilidades atuais e o algoritmo nunca voltará atrás de uma decisão que ele tenha feito.
 
@@ -79,7 +79,7 @@ O primeiro passo do algoritmo é definir o ponto inicial e nesse caso vai ser o 
 
 O algoritmo então irá procurar o vértice que tenha o menor custo e que ainda não foi visitado. Todos os outros vértices possuem o custo definido como **infinito**, então o que terá o menor custo será o vértice **A** e esse é o ponto inicial do algoritmo.
 
-![Diagrama do passo inicial do algoritmo de Dijkstra](../../images/dijkstra-diagram-first-step.png)
+![Diagrama do passo inicial do algoritmo de Dijkstra](/images/dijkstra-diagram-first-step.png)
 
 Para cada movimento a partir de **A**, o algoritmo irá atualizar os custos para se chegar até eles, somando o custo de **A** que é **0** com o peso da distância, se essa soma for menor que o custo atual do vértice, então esse valor será atualizado. Lembrando que definimos todos os vértices com o custo **infinito**.
 
@@ -117,13 +117,13 @@ O algoritmo marca o **A** como visitado e começa a iteração novamente, procur
 
 Nesse caso será o **B** e ele irá fazer os mesmos cálculos mostrados acima.
 
-![Diagrama do segundo passo do algoritmo de Dijkstra](../../images/dijkstra-diagram-second-step.png)
+![Diagrama do segundo passo do algoritmo de Dijkstra](/images/dijkstra-diagram-second-step.png)
 
 ---
 
 Agora para **D**:
 
-![Diagrama do terceiro passo do algoritmo de Dijkstra](../../images/dijkstra-diagram-third-step.png)
+![Diagrama do terceiro passo do algoritmo de Dijkstra](/images/dijkstra-diagram-third-step.png)
 
 ---
 
@@ -135,7 +135,7 @@ Por último o algoritmo passa por **C**.
 
 Note que **C** tem caminho para ir até **E**, porém ele não atualiza o custo pois é maior do que o custo atual em **E**:
 
-![Diagrama do quarto passo do algoritmo de Dijkstra](../../images/dijkstra-diagram-fourth-step.png)
+![Diagrama do quarto passo do algoritmo de Dijkstra](/images/dijkstra-diagram-fourth-step.png)
 
 ---
 

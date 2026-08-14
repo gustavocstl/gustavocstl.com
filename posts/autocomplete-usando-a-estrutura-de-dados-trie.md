@@ -5,7 +5,7 @@ title: "Auto-complete usando a estrutura de dados Trie"
 description: "Trie é uma estrutura de dados bastante eficiente para armazenar palavras e também facilita a busca por prefixo..."
 ---
 
-Trie (pronuncie "trái") é uma estrutura de dados bastante eficiente para armazenar palavras. Essa estrutura de dados também facilita a busca por prefixo em uma lista de palavras, imagine o seguinte problema:
+Trie é uma estrutura de dados bastante eficiente para armazenar palavras. Essa estrutura de dados também facilita a busca por prefixo em uma lista de palavras, imagine o seguinte problema:
 
 Você possui uma lista de palavras:
 - abacate
@@ -26,7 +26,7 @@ Com esse algoritmo, no pior caso, você precisará passar por todos os caractere
 
 A trie nos da uma forma eficiente de buscar palavras e isso é ideal para uma solução de auto-complete que busca palavras por um prefixo, veja como as palavras são armazenadas em uma trie:
 
-![Diagrama de uma Trie](../../images/trie.png)
+![Diagrama de uma Trie](/images/trie.png)
 
 Nesse diagrama temos as palavras:
 - abacate
@@ -123,7 +123,7 @@ wordsToAutocomplete(prefix, node) {
 
 Agora como exemplo, você pode utilizar essa demo para adicionar palavras e digitar em um campo de busca para mostrar o auto-complete:
 
-<iframe src="https://autocomplete-com-trie.netlify.app/" width="100%" height="500px" style="border: 1px solid #ccc;"></iframe>
+<iframe src="https://autocomplete-com-trie.netlify.app/" title="Demonstração de autocomplete usando Trie" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 
 Caso não consiga visualizar o exemplo, acesse o link externo: [https://autocomplete-com-trie.netlify.app/](https://autocomplete-com-trie.netlify.app/)
 

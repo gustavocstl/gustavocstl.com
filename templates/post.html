@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>$title$</title>
+    $if(description)$
+    <meta name="description" content="$description$">
+    $else$
+    <meta name="description" content="">
+    $endif$
+    <link rel="canonical" href="$canonical$">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <meta property="og:site_name" content="Gustavo Castilião">
+    <meta property="og:title" content="$title$">
+    $if(description)$
+    <meta property="og:description" content="$description$">
+    $else$
+    <meta property="og:description" content="">
+    $endif$
+    <meta property="og:url" content="$canonical$">
+    <meta property="og:image" content="https://gustavocstl.com/images/kafka.png">
+    <meta property="og:type" content="article">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="$title$">
+    $if(description)$
+    <meta name="twitter:description" content="$description$">
+    $else$
+    <meta name="twitter:description" content="">
+    $endif$
+    <meta name="twitter:image" content="https://gustavocstl.com/images/kafka.png">
+    $if(highlighting-css)$
+    <style>
+$highlighting-css$
+    </style>
+    $endif$
+    <link rel="stylesheet" href="/css/site.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Pular para o conteúdo</a>
+    <header class="site-header">
+      <a class="site-logo" href="/" aria-label="Página inicial">
+        <img src="/images/kafka.png" width="140" height="140" alt="Franz Kafka, A Metamorfose">
+      </a>
+    </header>
+    <main id="content" class="site-content">
+      <article>
+        <header class="article-head">
+          <h1>$title$</h1>
+          <time datetime="$date$">$date$</time>
+        </header>
+        <div class="article-content">
+$body$
+        </div>
+      </article>
+    </main>
+    <footer class="site-footer">
+      <nav aria-label="Links externos">
+        <a href="https://www.linkedin.com/in/gustavocastiliao" rel="me noreferrer">LinkedIn</a>
+        <a href="https://github.com/gustavocstl" rel="me noreferrer">GitHub</a>
+      </nav>
+    </footer>
+  </body>
+</html>

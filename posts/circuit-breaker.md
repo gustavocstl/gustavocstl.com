@@ -23,17 +23,17 @@ passado, o disjuntor pode ser reiniciado para restaurar a função completa do s
 
 Veja o seguinte cenário, o serviço **Orders** se comunica com o serviço **Payments** que se comunica com o **Payment Gateway**:
 
-<img alt="Cenário de Exemplo" src="../../images/circuit-breaker-problematic-communication.png" align="center">
+<img alt="Cenário de Exemplo" src="/images/circuit-breaker-problematic-communication.png" align="center">
 
 Se por algum motivo o **Payment Gateway** demorar para responder e retornar um timeout, teremos uma falha no **Payments** que também irá retornar um timeout e desencadear uma falha no **Orders**.
 
 Essas falhas em cascata irão acontecer para todas as requisições, mesmo sabendo que nenhuma delas vão conseguir completar com sucesso e isso é um problema, pois uma vez que sabemos que o **Payment Gateway** está com problemas, podemos **falhar antes** e evitar o gasto de recursos desnecessário até que o **Payment Gateway** volte ao seu estado normal.
 
-<img alt="Cenário de Exemplo com Timeout" src="../../images/circuit-breaker-sequence-diagram-timeout.png" align="center">
+<img alt="Cenário de Exemplo com Timeout" src="/images/circuit-breaker-sequence-diagram-timeout.png" align="center">
 
 Para resolver isso podemos utilizar o circuit breaker para lidar com essa comunicação entre **Payments** e **Payment Gateway**. 
 
-<img alt="Diagrama do Circuit Breaker" src="../../images/circuit-breaker.png" align="center">
+<img alt="Diagrama do Circuit Breaker" src="/images/circuit-breaker.png" align="center">
 
 O circuit breaker possui 3 estados:
 
@@ -45,13 +45,13 @@ O circuit breaker possui 3 estados:
 
 Veja como fica o diagrama de sequência com o circuit breaker:
 
-<img alt="Diagrama de sequência com Circuit Breaker" src="../../images/circuit-breaker-sequence-diagram.png" align="center">
+<img alt="Diagrama de sequência com Circuit Breaker" src="/images/circuit-breaker-sequence-diagram.png" align="center">
 
 Veja que o serviço problemático (**Payment Gateway**) nem foi chamado, pois a requisição anterior pegou o timeout e disparou o circuit breaker que alterou o estado para **Open**. Com isso as próximas requisições não serão liberadas pelo circuit breaker, neste caso uma mensagem de erro pode ser retornada.
 
 Também quando o circuit breaker está no estado **Open**, ao invés de retornar uma mensagem, podemos definir alguma estratégia de alternativa, por exemplo, podemos definir para que o circuit breaker chame um outro **Payment Gateway** para tentar completar o pagamento sem que o cliente seja afetado.
 
-<img alt="Diagrama de sequência com Circuit Breaker e Fallback" src="../../images/circuit-breaker-sequence-diagram-fallback.png" align="center">
+<img alt="Diagrama de sequência com Circuit Breaker e Fallback" src="/images/circuit-breaker-sequence-diagram-fallback.png" align="center">
 
 Entretanto esta é uma decisão que deve ser tomada levando em conta as decisões de negócio. Dependendo das regras de negócio é necessário saber se é aceitável pensar em alternativas caso a primeira opção falhe.
 

@@ -7,7 +7,7 @@ description: "Um slice possui em sua estrutura um ponteiro para um índice de um
 
 Um slice possui em sua estrutura um ponteiro para um índice de um array.
 
-![Diagrama de um slice sendo criado](../../images/slice-init-diagram.png)
+![Diagrama de um slice sendo criado](/images/slice-init-diagram.png)
 
 Arrays são definidos com um tamanho fixo `var x [3]int`, já os slices nos permite manipular esses arrays como se fossem dinâmicos.
 
@@ -17,7 +17,7 @@ Com a declaração `x := []int{8, 13, 21}` criamos um novo slice, repare que nã
 
 Esse slice irá ser definido como:
 
-![Diagram de um slice](../../images/slice-diagram.png)
+![Diagram de um slice](/images/slice-diagram.png)
 
 Veja que a capacidade do slice é 3, mas e se por exemplo tentarmos adicionar um novo elemento:
 ```go
@@ -47,7 +47,7 @@ Podemos tentar evitar que esse processo aconteça criando slices com tamanhos e 
 
 Podemos também criar um slice com base em outro slice, veja como ficaria:
 
-![Diagrama criando slice a partir de um slice](../../images/slice-of-slice-diagram.png)
+![Diagrama criando slice a partir de um slice](/images/slice-of-slice-diagram.png)
 
 Declaramos `y := x[1:2]` e esse slice não irá criar um novo array, ele receberá o ponteiro para o índice **1** do array na memória.
 

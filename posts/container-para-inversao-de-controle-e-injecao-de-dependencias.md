@@ -11,7 +11,7 @@ Imagine a classe `ProductRepository`, essa classe precisa executar ações em um
 
 Podemos dizer que `MysqlConnection` é uma dependência de `ProductRepository`.
 
-![Diagrama de dependência](../../images/dependency-diagram.png)
+![Diagrama de dependência](/images/dependency-diagram.png)
 
 Uma forma fácil, mas **não ideal** de implementar isso poderia ser:
 ```php
@@ -81,7 +81,7 @@ O princípio da inversão de dependência diz que uma classe deve depender de ab
 Para resolver o problema do exemplo acima, precisamos criar uma `interface` que define o comportamento da classe e então depender apenas dessa `interface`.
 Dessa forma **invertemos as dependências**, pois o `ProductRepository` vai depender somente da `interface` e `MysqlConnection` vai depender da `interface` para implementar os comportamentos.
 
-![Diagrama de Inversão de Controle](../../images/inversion-of-control-diagram.png)
+![Diagrama de Inversão de Controle](/images/inversion-of-control-diagram.png)
 
 ```php
 class MysqlConnection implements ConnectionInterface

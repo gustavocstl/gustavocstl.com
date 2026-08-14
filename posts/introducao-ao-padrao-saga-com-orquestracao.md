@@ -11,13 +11,13 @@ Neste post vamos falar sobre o padrão saga **com orquestração**. A orquestra�
 
 Imagine um sistema de ecommerce onde cada compra tem um ciclo de vida que envolve desde a **criação do pedido** até o **envio** e durante esse fluxo múltiplos serviços de diferentes domínios podem ser envolvidos:
 
-<img alt="Fluxo de Exemplo" src="../../images/saga-orchestrator-basic-flow-example.png" align="center">
+<img alt="Fluxo de Exemplo" src="/images/saga-orchestrator-basic-flow-example.png" align="center">
 
 Neste exemplo, os serviços de **pedido** não deveriam conhecer e nem mesmo saber como funcionam os serviços de **pagamento**.
 
 Quem irá fazer esse papel de comunicar com cada domínio é o próprio orquestrador saga, ele será o responsável por saber em qual etapa aquele fluxo está e para onde ele precisa ir. Também saberá qual é o serviço que deve ser chamado e como essa chamada deverá ser feita: 
 
-<img alt="Fluxo de Exemplo com Orquestração" src="../../images/saga-orchestrator-flow-example.png" align="center">
+<img alt="Fluxo de Exemplo com Orquestração" src="/images/saga-orchestrator-flow-example.png" align="center">
 
 Veja que o fluxo no orquestrador é separado por **etapas** e cada **etapa** é executada sequencialmente. O orquestrador está sempre aguardando um evento acontecer para saber quando executar a próxima **etapa**. Também vemos aqui que o orquestrador funciona muito bem em uma arquitetura orientada à eventos.
 
@@ -29,7 +29,7 @@ Agora imagine que, por algum motivo, o serviço de **envio** teve um problema e 
 
 No contexto do saga, ações que envolvem resolução de erros, são chamadas de **compensações**. É possível imaginar um fluxo inverso realizando ações para compensar as falhas ocorridas no fluxo:
 
-<img alt="Fluxo Rollback" src="../../images/saga-orchestrator-example-rollback.png" align="center">
+<img alt="Fluxo Rollback" src="/images/saga-orchestrator-example-rollback.png" align="center">
 
 Nesse cenário de erro, o orquestrador também é o responsável por avisar os outros serviços que as ações **compensatórias** precisam ser realizadas, como se fosse um **rollback** em uma transação.
 

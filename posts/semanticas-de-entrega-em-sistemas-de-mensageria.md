@@ -39,7 +39,7 @@ Essa semântica é complexa de ser implementada pois exige que tenha cooperaçã
 
 RabbitMQ é um broker baseado em filas e roteamento, ele segue um modelo push onde o broker envia as mensagens para os consumidores assim que elas chegam. RabbitMQ oferece **at-most-once** e **at-least-once**, mas não oferece **exactly-once**.
 
-<img alt="Exemplo RabbitMQ" src="../../images/rabbitmq-example.png" align="center">
+<img alt="Exemplo RabbitMQ" src="/images/rabbitmq-example.png" align="center">
 
 O RabbitMQ usa os [acknowledgements](https://www.rabbitmq.com/docs/confirms) como uma forma de garantir tanto a publicação quanto o consumo das mensagens.
 
@@ -71,7 +71,7 @@ Por exemplo, imagine um consumidor que demora alguns minutos para processar cada
 No Kafka não existe o conceito de filas igual no RabbitMQ, ao invés de adicionar as mensagens em uma fila, o Kafka apenas adiciona um novo registro no [log](https://kafka.apache.org/documentation/#log). Esse log é distribuído e replicado entre outros nós no cluster. Kafka oferece **at-most-once**, **at-least-once** e **exactly-once**.
 
 
-<img alt="Exemplo Kafka" src="../../images/kafka-example.png" align="center">
+<img alt="Exemplo Kafka" src="/images/kafka-example.png" align="center">
 
 O Kafka usa [producer acks](https://docs.confluent.io/kafka/design/replication.html#in-sync-replicas-and-producer-acks) para garantir o envio da mensagem pelo publicador e usa [offset tracking](https://docs.confluent.io/kafka/design/consumer-design.html#tracking-consumer-position) para garantir que os consumidores processaram uma mensagem.
 
