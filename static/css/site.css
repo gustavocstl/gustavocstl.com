@@ -64,8 +64,11 @@ a:focus-visible {
 
 .site-header {
   display: flex;
-  justify-content: center;
-  padding-block: 1rem 0.5rem;
+  padding-block: 4rem 0.5rem;
+}
+
+.site-header a {
+  text-decoration: none;
 }
 
 .site-logo {
@@ -83,10 +86,8 @@ a:focus-visible {
 
 .posts {
   margin: 2.5rem 0;
-  padding: 0;
-  list-style: none;
-  text-align: center;
-  font-size: 2rem;
+  text-align: left;
+  font-size: 1.7rem;
   line-height: 1.35;
 }
 
